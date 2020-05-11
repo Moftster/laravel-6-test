@@ -1,0 +1,44 @@
+$btn-primary-color: #0078D4;
+
+%btn{
+    display: inline-block;
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin: 3px;
+    border: 2px solid #0078D4;
+    font-size: 15px;
+    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    &:hover{
+        transform: scale(.98);
+        cursor: pointer;
+    }
+}
+
+.btn-primary{
+    @extend %btn;
+    color: white;
+    @include set-background($btn-primary-color);
+}
+
+.btn-secondary{
+    @extend %btn;
+    color: $btn-primary-color;
+    background-color: white;
+
+}
+
+.success-alert{
+    padding: 0.5rem;
+    text-align: center;
+    width: 100%;
+    background-color: #D4EDDA;
+    // border: solid 1px #487133;
+
+}
+
+.error-alert{
+    padding: 0.5rem;
+    margin-top: 10px;
+    background-color: #F8D7DA;
+}

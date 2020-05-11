@@ -1,0 +1,22 @@
+$font-stack: 'Segoe UI', Tahoma, Geneva, Verdana,  sans-serif;
+$light-color: #f4f4f4;
+$primary-color: #0e6cff;
+// $primary-color: #0e6cff;
+$secondary-color: #ff8700;
+
+// Function to set text color based on background
+
+@function set-text-color($color){
+    @if(lightness($color) > 70) {
+        @return #fff;
+    } @else {
+        @return #fff;
+    }
+}
+
+// Set background & text color
+@mixin set-background($color){
+    background-color: $color;
+    color: set-text-color($color);
+}
+
