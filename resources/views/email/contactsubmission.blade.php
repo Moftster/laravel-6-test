@@ -9,7 +9,7 @@
 <strong>Phone:</strong> {{$phone}} 
 <br>
 <br>
-The person who has made contact is a potential <strong> {{$clientortherapist}} </strong>.
+The person who has made contact earns <strong> {{$overunder25k}} </strong>.
 <br>
 <br>
 <strong>Theie message was as follows:</strong>

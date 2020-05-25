@@ -20,7 +20,7 @@ class CreateContactTable extends Migration
             $table->string('lastname');
             $table->string('email');
             $table->string('telephone');
-            $table->string('clientortherapist');
+            $table->string('overunder25k');
             $table->string('message');
         });
     }

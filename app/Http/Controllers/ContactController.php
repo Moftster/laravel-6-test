@@ -19,7 +19,7 @@ class ContactController extends Controller
             'last_name' => 'required',
             'email' => 'required',
             'phone' => 'required',
-            'clientortherapist' => 'required',
+            'overunder25k' => 'required',
             'message' => 'required'
         ]);
 
@@ -29,7 +29,7 @@ class ContactController extends Controller
         $contact->lastname = $req->last_name;
         $contact->email = $req->email;
         $contact->telephone = $req->phone;
-        $contact->clientortherapist = $req->clientortherapist;
+        $contact->overunder25k = $req->overunder25k;
         $contact->message = $req->message;
 
         $contact->save();
@@ -40,13 +40,13 @@ class ContactController extends Controller
             $contactName = $req->first_name . " " . $req->last_name;
             $contactEmail = $req->email;
             $contactPhone = $req->phone;
-            $clientortherapist = $req->clientortherapist;
+            $overunder25k = $req->overunder25k;
             $contactMessage = $req->message;
 
                $data = array(  'name'=> $contactName, 
                                'email'=> $contactEmail, 
                                'phone' => $contactPhone,
-                               'clientortherapist' => $clientortherapist,
+                               'overunder25k' => $overunder25k,
                                'contactmessage' => $contactMessage
                            );
                

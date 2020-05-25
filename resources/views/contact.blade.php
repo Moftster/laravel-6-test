@@ -50,10 +50,10 @@
                 <input type="text" name="phone">
               </p>
               <p class="full">
-                <label for="">Do you earn above £25,000 per annum?</label>
-                <select class="form-control" id="clientortherapist" name="clientortherapist">
-                  <option>Yes</option>
-                  <option>No</option>
+                <label for="">Do you earn over or under £25,000 per annum?</label>
+                <select class="form-control" id="overunder25k" name="overunder25k">
+                  <option>Over £25,000</option>
+                  <option>Under £25,000</option>
                 </select>
               </p>
               <p class="full">
