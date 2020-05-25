@@ -50,10 +50,10 @@
                 <input type="text" name="phone">
               </p>
               <p class="full">
-                <label for="">Are you a client seeking psychotherapy/counselling or a therapist looking to work with clients?</label>
+                <label for="">Do you earn above £25,000 per annum?</label>
                 <select class="form-control" id="clientortherapist" name="clientortherapist">
-                  <option>Client</option>
-                  <option>Therpaist</option>
+                  <option>Yes</option>
+                  <option>No</option>
                 </select>
               </p>
               <p class="full">
